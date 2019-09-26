@@ -6,4 +6,13 @@
   <h3>{{product.name}}</h3>
   <h4>{{product.price | currency}}</h4>
   <p>{{product.description}}</p>
+
+  <button (click)="addToCart(product)">
+    Buy
+  </button>
+
+  <p *ngFor="let item of this.cartService.items">
+    {{item.name}}
+    {{item.price}}
+  </p>
 </div>
