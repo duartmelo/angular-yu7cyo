@@ -2,7 +2,7 @@
   Cart
 </h3>
 
-<div class="cart-item" *ngFor="let item of items">
+<div class="cart-item" *ngFor="let item of this.items">
   <spam>{{item.name}}</spam>
   <span>{{item.price | currency}}</span>
 </div>
