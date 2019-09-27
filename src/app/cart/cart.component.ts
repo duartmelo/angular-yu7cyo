@@ -19,7 +19,6 @@ export class CartComponent implements OnInit {
 
   ngOnInit() {
     this.items = this.cartService.getItems();
-
     this.checkoutForm = this.formBuilder.group({
      name: '',
      address: ''
